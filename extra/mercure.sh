@@ -12,5 +12,5 @@ fi
 if [ -n "$DISABLE_MERCURE" ]; then
   echo "The Mercure Hub agent has been disabled. Unset the $DISABLE_MERCURE variable or set missing environment variables."
 else
-  bash -c "mercure run --config $APP_MERCURE/Caddyfile 2>&1 &"
+  bash -c "mercure $MERCURE_ARGS 2>&1 &"
 fi
